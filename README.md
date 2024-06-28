@@ -15,7 +15,7 @@
 
 **API Used:** [Marvel Comics API](https://developer.marvel.com/)
 
-**Screenshot:** ![Screenshot](screenshot/screenshot.png)
+**Screenshot:** ![Screenshot](screenshots/screenshot.png)
 
 ---
 
