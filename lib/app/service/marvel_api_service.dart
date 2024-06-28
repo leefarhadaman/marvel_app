@@ -14,9 +14,33 @@ class MarvelApiService {
   }
 
   Future<Response> getCharacters() async {
+    return _fetchData('characters');
+  }
+
+  Future<Response> getComics() async {
+    return _fetchData('comics');
+  }
+
+  Future<Response> getCreators() async {
+    return _fetchData('creators');
+  }
+
+  Future<Response> getEvents() async {
+    return _fetchData('events');
+  }
+
+  Future<Response> getSeries() async {
+    return _fetchData('series');
+  }
+
+  Future<Response> getStories() async {
+    return _fetchData('stories');
+  }
+
+  Future<Response> _fetchData(String endpoint) async {
     final timestamp = DateTime.now().millisecondsSinceEpoch.toString();
     final hash = _generateHash(timestamp);
-    final response = await Dio().get('${baseUrl}characters', queryParameters: {
+    final response = await Dio().get('$baseUrl$endpoint', queryParameters: {
       'ts': timestamp,
       'apikey': publicKey,
       'hash': hash,
