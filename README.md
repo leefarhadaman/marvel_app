@@ -3,7 +3,7 @@
 
 **Project Name:** marvel_app
 
-**Description:** A Flutter application using the Marvel Comics API to fetch data securely using `.env` files. Utilizes Flutter packages including `flutter_dotenv`, `dio`, `http`, `get`, `crypto`, and `flutter_screenutil`.
+**Description:** A Flutter application using the Marvel Comics API to fetch data securely using `.env` files. Utilizes Flutter packages including `flutter_dotenv`, `dio`, `http`, `get` and `flutter_screenutil`.
 
 **Developer:** dev.faru
 
